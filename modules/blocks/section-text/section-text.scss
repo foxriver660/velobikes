@@ -1,0 +1,17 @@
+.section-text {
+  outline: 1px dashed green;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $text-color-main;
+  &_theme_dark {
+    color: $text-color-dark;
+    opacity: .7;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+line-height: 18px;
+  }
+}

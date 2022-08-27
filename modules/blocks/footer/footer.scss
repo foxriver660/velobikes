@@ -1,0 +1,161 @@
+.footer {
+  box-sizing: border-box;
+  outline: 1px solid green;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 123px 60px 120px;
+  @media screen  and (max-width:1439px){
+    padding:  2.5vw 5vw 2vw 5vw;
+  }
+  @media screen  and (max-width:767px){
+    padding:  60px 18px 16px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 360px;
+    width: 100%;
+  }
+
+  &__heading {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-color-main;
+    max-width: 229px;
+    
+    &_theme_dark {
+      color: $title-color-dark;
+    }
+  }
+  &__form {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+  }
+  &__form-container {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  &__submit-btn {
+    position: absolute;
+    top: 20%;
+    right: 11px;
+    background-color: inherit;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    cursor: $custom-cursor;
+    color: $title-color-main;
+    opacity: 0;
+    visibility: hidden;
+    &_active {
+      opacity: .7;
+    visibility: visible;
+    transition: opacity 0.3s ease
+    }
+  }
+ 
+
+  &__email-input {
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    opacity: 0.5;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    background-color: inherit;
+    cursor: $custom-cursor;
+    color: $title-color-main;
+    &_theme_dark {
+      color: $title-color-dark;
+      border: 1px solid rgba(125, 125, 125, 0.5);
+    }
+  }
+  &__email-input::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: inherit;
+    opacity: 0.7;
+    background-color: inherit;
+  }
+  &__email-input:hover::placeholder {
+    opacity: 1;
+  }
+  &__email-input:focus::placeholder {
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+
+  &__copyrigth {
+    margin: 0;
+    padding-top: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #cfcfcf;
+  }
+
+  &__switch-box {
+    display: flex;
+    gap: 22px;
+    outline: 1px solid red;
+    align-self: flex-end;
+  }
+  &__checkbox {
+    width: 44px;
+    height: 24px;
+    align-self: center;
+  }
+  &__checkbox-input {
+    display: none;
+  }
+  &__checkbox-input:checked ~ &__pseudo-checkbox {
+    background-color: #545454;
+  }
+  &__checkbox-input:checked ~ &__pseudo-checkbox::before {
+    transform: translateX(20px);
+    transition: 0.2s ease-in;
+  }
+  &__pseudo-checkbox {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    transition: 0.5s ease-in;
+    background-color: #fff;
+    border-radius: 12px;
+    cursor: $custom-cursor;
+  }
+  &__pseudo-checkbox::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #24b47e;
+  }
+  &__checkbox-icon {
+    width: 28px;
+  }
+  &__checkbox-icon:last-of-type {
+    width: 19px;
+  }
+}

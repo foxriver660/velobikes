@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./modules/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Покрытия и градиенты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Велосипеды</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Тренировки</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="benefits">
+        <h1 class="section-title benefits__title">Шоссе, ТТ и Грэвел</h1>
+        <p class="section-text benefits__text">
+          Триатлонные старты, горные серпантины или грейвел заезды по живописным
+          маршрутам – нужно только определиться с выбором велосипеда и
+          отправиться в путь.
+        </p>
+        <button class="benefits__button">Подробнее</button>
+        <p class="benefits__img-text">Cannondale Systemsix</p>
+
+        <img class="benefits__image" src="./images/Placeholder.jpg" alt="" />
+        <div class="benefits__sticky-container">
+          <img
+            class="benefits__sticky-image"
+            src="./images/Снимок экрана 2021-05-24 в 12.58 (1).jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="motivation">
+        <img src="./images/Placeholder1.jpg" alt="" class="motivation__image" />
+        <blockquote class="motivation__container">
+          <p class="motivation__quote">
+            «Катайся много или мало, долго или коротко, как хочешь - но катайся»
+          </p>
+          <p class="motivation__quote-author">
+            Эдди Меркс<span class="motivation__author-job">Велогонщик</span>
+          </p>
+        </blockquote>
+      </section>
+      <section class="slider">
+        <div class="slider__container">
+          <div class="slider__item">
+            <h2 class="section-title slider__title">Шоссе</h2>
+            <p class="section-text slider__text">
+              На шоссейном велосипеде можно ездить по асфальту на разных
+              градиентах: будь то горы или равнины. Гонки проходят в командном
+              пелотоне, но тренироваться можно и самостоятельно.
+            </p>
+            <div class="slider__images">
+              <img class="slider__image" src="./images/slider1.1.jpg" alt="" />
+              <img class="slider__image" src="./images/slider1.2.jpg" alt="" />
+              <img
+                class="slider__route-img"
+                src="./images/Vector 1.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <h2 class="section-title slider__title">Грэвел</h2>
+            <p class="section-text slider__text">
+              Грэвел похож на шоссейный велосипед, но конструкция рамы немного
+              отличается, и на нём стоят более широкие покрышки, всё для того
+              чтобы проехать по лёгкому бездорожью.
+            </p>
+            <div class="slider__images">
+              <img class="slider__image" src="./images/slider2.1.jpg" alt="" />
+              <img class="slider__image" src="./images/slider2.2.jpg" alt="" />
+              <img
+                class="slider__route-img"
+                src="./images/Vector 1 (1).svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <h2 class="section-title slider__title">ТТ</h2>
+            <p class="section-text slider__text">
+              ТТ — это велосипед для триатлона или раздельного старта, гооняют
+              на таком велике только по равнинному асфальту, велик очень быстрые
+              и аэродинамичный.
+            </p>
+            <div class="slider__images">
+              <img class="slider__image" src="./images/slider3.1.jpg" alt="" />
+              <img class="slider__image" src="./images/slider3.2.jpg" alt="" />
+              <img
+                class="slider__route-img"
+                src="./images/Vector 2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="slider__buttons">
+          <button class="slider__button slider__button_type_prev"></button>
+          <button class="slider__button slider__button_type_next"></button>
+        </div>
+      </section>
+      <section class="velobikes">
+        <h2 class="section-title">Велосипеды</h2>
+
+        <div class="velobikes__dropdown">
+          <button type="button" class="velobikes__dropdown-btn">Шоссе</button>
+          <ul class="velobikes__dropdown-list">
+            <li
+              class="velobikes__dropdown-item velobikes__dropdown-item_active"
+              data-value="highway"
+            >
+              Шоссе
+            </li>
+            <li class="velobikes__dropdown-item" data-value="gravel">Грэвел</li>
+            <li class="velobikes__dropdown-item" data-value="tt">TT</li>
+          </ul>
+        </div>
+
+        <ul class="velobikes__cards-container">
+          <li class="velobikes__card">
+            <img
+              class="velobikes__card-image"
+              src="./images/Снимок экрана 2021-05-24 в 12.59.jpg"
+              alt=""
+            />
+            <p class="velobikes__model-name">Cervelo Caledonia-5</p>
+          </li>
+          <li class="velobikes__card">
+            <img
+              class="velobikes__card-image"
+              src="./images/Снимок экрана 2021-05-24 в 12.58 (2).jpg"
+              alt=""
+            />
+            <p class="velobikes__model-name">Cannondale Systemsix Himod</p>
+          </li>
+          <li class="velobikes__card">
+            <img
+              class="velobikes__card-image"
+              src="./images/Снимок экрана 2021-05-24 в 12.58 (3).jpg"
+              alt=""
+            />
+            <p class="velobikes__model-name">Trek Domane SL-7</p>
+          </li>
+        </ul>
+      </section>
+      <section class="workout">
+        <h2 class="section-title workout__title">Тренировки</h2>
+        <p class="section-text workout__text">
+          Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+          Komoot, а записать эти тренировки поможет приложение Strava, а также
+          это приложение позволит построить тренировочный план.
+        </p>
+        <div class="workout__links">
+          <a class="workout__link" href="">Strava</a>
+          <a class="workout__link" href="">Komoot</a>
+        </div>
+        <img class="workout__image" src="./images/Placeholder4.jpg" alt="" />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <h3 class="footer__heading">Подпишитесь на рассылку —</h3>
+
+        <form class="footer__form">
+          <fieldset class="footer__form-container">
+            <input
+              placeholder="Ваш e-mail"
+              class="footer__email-input"
+              type="email"
+              value=""
+            />
+          </fieldset>
+          <button class="footer__submit-btn">ok</button>
+        </form>
+
+        <p class="footer__copyrigth">© Road Club 2021</p>
+      </div>
+
+      <div class="footer__switch-box">
+        <img
+          class="footer__checkbox-icon"
+          src="./images/Vector-light.svg"
+          alt=""
+        />
+        <label class="footer__checkbox">
+          <input class="footer__checkbox-input" type="checkbox" />
+          <div class="footer__pseudo-checkbox"></div>
+        </label>
+        <img
+          class="footer__checkbox-icon"
+          src="./images/Vector-dark.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+    <script src="./modules/scripts/slider-script.js"></script>
+    <script src="./modules/scripts/light-dark-theme.js"></script>
+    <script src="./modules/scripts/email-input.js"></script>
+    <script src="./modules/scripts/small-dropdown-menu.js"></script>
+  </body>
+</html>
