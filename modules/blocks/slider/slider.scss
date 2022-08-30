@@ -1,6 +1,5 @@
 .slider {
-  outline: 1px solid green;
-  padding: 60px 0 77px 120px;
+    padding: 60px 0 77px 120px;
   position: relative;
   overflow: hidden;
   min-height: 922px;
@@ -10,7 +9,7 @@
     min-height: 38.4vw;
   }
   @media screen and (max-width: 767px) {
-    padding: 40px 18px;
+    padding: 40px 18px 40px;
   }
   &__container {
     width: 100%;
@@ -20,12 +19,11 @@
     transition: 1s ease-in-out;
   }
   &__item {
-    outline: 1px solid rgb(35, 2, 247);
-    display: flex;
-    width: 91.7vw;
+        display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 50px;
-    overflow: hidden;
+    
     @media screen and (max-width: 767px) {
       gap: 40px;
     }
@@ -36,6 +34,7 @@
   }
   &__text {
     order: 2;
+    max-width: 460px;
     @media screen and (max-width: 767px) {
       order: 3;
     }
@@ -43,26 +42,33 @@
 
   &__images {
     order: 3;
-    outline: 1px solid red;
-    display: flex;
+        display: flex;
     gap: 40px;
     padding-top: 30px;
     position: relative;
     @media screen and (max-width: 767px) {
       order: 2;
       padding-top: 0;
+      gap: 0;
+      justify-content: center;
     }
   }
   &__image {
     max-width: 650px;
-    width: 46vw;
+    width: 100%;
+    @media screen and (max-width: 1439px) {
+      width: 50%
+    }
     @media screen and (max-width: 767px) {
       width: 100%
     }
   }
   &__image:nth-of-type(2n) {
     max-width: 630px;
-    width: 44vw;
+    width: 100%;
+    @media screen and (max-width: 1439px) {
+      width: 50%
+    }
     @media screen and (max-width: 767px) {
       display: none;
     }
@@ -82,13 +88,16 @@
     gap: 43px;
     @media screen and (max-width: 767px) {
       position: absolute;
-      top: 48px;
+      top: 90px;
       right: 20px;
       padding-top: 0;
       gap: 10px;
     }
   }
-
+  &__button:hover {
+    
+    opacity: .6;
+  }
   &__button {
     padding: 0;
     border: none;
@@ -122,7 +131,3 @@
     }
   }
 }
-
-// &_type_next-dark {
-//   background-image: url(../../../images/next_dark.svg);
-// }

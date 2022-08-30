@@ -1,16 +1,21 @@
 .footer {
   box-sizing: border-box;
-  outline: 1px solid green;
+  background-color: #EFEFEF;
   max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 80px 123px 60px 120px;
+  padding: 80px 120px 60px 120px;
+  position: relative;
+  &_theme_dark {
+    background-color: #2F2F2F;
+  }
   @media screen  and (max-width:1439px){
     padding:  2.5vw 5vw 2vw 5vw;
   }
   @media screen  and (max-width:767px){
     padding:  60px 18px 16px;
+    
   }
   &__container {
     display: flex;
@@ -112,50 +117,5 @@
     color: #cfcfcf;
   }
 
-  &__switch-box {
-    display: flex;
-    gap: 22px;
-    outline: 1px solid red;
-    align-self: flex-end;
-  }
-  &__checkbox {
-    width: 44px;
-    height: 24px;
-    align-self: center;
-  }
-  &__checkbox-input {
-    display: none;
-  }
-  &__checkbox-input:checked ~ &__pseudo-checkbox {
-    background-color: #545454;
-  }
-  &__checkbox-input:checked ~ &__pseudo-checkbox::before {
-    transform: translateX(20px);
-    transition: 0.2s ease-in;
-  }
-  &__pseudo-checkbox {
-    position: relative;
-    width: 44px;
-    height: 24px;
-    transition: 0.5s ease-in;
-    background-color: #fff;
-    border-radius: 12px;
-    cursor: $custom-cursor;
-  }
-  &__pseudo-checkbox::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #24b47e;
-  }
-  &__checkbox-icon {
-    width: 28px;
-  }
-  &__checkbox-icon:last-of-type {
-    width: 19px;
-  }
+  
 }

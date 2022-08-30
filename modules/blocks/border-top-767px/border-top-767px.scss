@@ -1,0 +1,11 @@
+.border-top-767px {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: 1px;
+    border-top: 1px solid #E3E3E3;
+    padding-bottom: 40px;
+    width: 100%;
+    grid-area: 1/1/1/1;
+     }
+}

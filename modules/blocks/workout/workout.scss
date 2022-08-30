@@ -1,10 +1,9 @@
 .workout {
-  outline: 1px solid green;
   padding: 150px 120px 120px;
   display: grid;
   grid-template-columns: minmax(350px, 460px) 1fr 580px;
   align-items: flex-start;
-  
+
   column-gap: 20px;
   row-gap: 20px;
 
@@ -14,11 +13,14 @@
   @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
     row-gap: 40px;
-    padding: 40px 18px;
+    padding: 80px 18px;
   }
 
   &__title {
     grid-area: 1/1/1/1;
+    @media screen and (max-width: 767px) {
+      padding-top: 40px;
+    }
   }
   &__text {
     grid-area: 2/1/2/1;
@@ -48,9 +50,12 @@
     line-height: 28px;
     color: $title-color-main;
     cursor: $custom-cursor;
+    &:hover {
+      opacity: .75;
+    }
     @media screen and (max-width: 767px) {
       font-size: 14px;
-line-height: 20px;
+      line-height: 20px;
     }
     &_theme_dark {
       color: $title-color-dark;
@@ -65,7 +70,7 @@ line-height: 20px;
       grid-area: 2/1/2/1;
       justify-self: center;
       width: 100%;
-      min-width: 284px
+      min-width: 284px;
     }
   }
 }
