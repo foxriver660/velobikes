@@ -10,15 +10,36 @@
   <body class="page">
     <header class="header">
       <nav class="header__menu">
+        <button class="header__burger-btn"></button>
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Покрытия и градиенты</a>
+            <a class="header__menu-link" href="#coating"
+              >Покрытия и градиенты</a
+            >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Велосипеды</a>
+            <a class="header__menu-link" href="#velobikes">Велосипеды</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Тренировки</a>
+            <a class="header__menu-link" href="#workout">Тренировки</a>
+          </li>
+          <li class="header__menu-item">
+            <div class="switch-box switch-box_place_header">
+              <img
+                class="switch-box__checkbox-icon"
+                src="./images/Vector-light.svg"
+                alt="День"
+              />
+              <label class="switch-box__checkbox">
+                <input class="switch-box__checkbox-input" type="checkbox" />
+                <span class="switch-box__pseudo-checkbox"></span>
+              </label>
+              <img
+                class="switch-box__checkbox-icon"
+                src="./images/Vector-dark.svg"
+                alt="Ночь"
+              />
+            </div>
           </li>
         </ul>
       </nav>
@@ -34,27 +55,37 @@
         <button class="benefits__button">Подробнее</button>
         <p class="benefits__img-text">Cannondale Systemsix</p>
 
-        <img class="benefits__image" src="./images/Placeholder.jpg" alt="" />
+        <img
+          class="benefits__image"
+          src="./images/Placeholder.jpg"
+          alt="Лесистая трасса в горах"
+        />
         <div class="benefits__sticky-container">
           <img
             class="benefits__sticky-image"
-            src="./images/Снимок экрана 2021-05-24 в 12.58 (1).jpg"
-            alt=""
+            src="./images/sticky-bike.jpg"
+            alt="Трековый велосипед"
           />
         </div>
       </section>
       <section class="motivation">
-        <img src="./images/Placeholder1.jpg" alt="" class="motivation__image" />
+        <div class="border-top-767px"></div>
+        <img
+          src="./images/Placeholder1.jpg"
+          alt="асфальтированная дорога в долине"
+          class="motivation__image"
+        />
         <blockquote class="motivation__container">
-          <p class="motivation__quote">
+          <h2 class="motivation__quote">
             «Катайся много или мало, долго или коротко, как хочешь - но катайся»
-          </p>
+          </h2>
           <p class="motivation__quote-author">
             Эдди Меркс<span class="motivation__author-job">Велогонщик</span>
           </p>
         </blockquote>
       </section>
-      <section class="slider">
+      <section class="slider" id="coating">
+        <div class="border-top-767px"></div>
         <div class="slider__container">
           <div class="slider__item">
             <h2 class="section-title slider__title">Шоссе</h2>
@@ -64,11 +95,19 @@
               пелотоне, но тренироваться можно и самостоятельно.
             </p>
             <div class="slider__images">
-              <img class="slider__image" src="./images/slider1.1.jpg" alt="" />
-              <img class="slider__image" src="./images/slider1.2.jpg" alt="" />
+              <img
+                class="slider__image"
+                src="./images/slider1.1.jpg"
+                alt="велотрасса в горах"
+              />
+              <img
+                class="slider__image"
+                src="./images/slider1.2.jpg"
+                alt="велотрасса в холмах"
+              />
               <img
                 class="slider__route-img"
-                src="./images/Vector 1.svg"
+                src="./images/Mountain-trek.svg"
                 alt=""
               />
             </div>
@@ -82,11 +121,19 @@
               чтобы проехать по лёгкому бездорожью.
             </p>
             <div class="slider__images">
-              <img class="slider__image" src="./images/slider2.1.jpg" alt="" />
-              <img class="slider__image" src="./images/slider2.2.jpg" alt="" />
+              <img
+                class="slider__image"
+                src="./images/slider2.1.jpg"
+                alt="велотрасса в холмах"
+              />
+              <img
+                class="slider__image"
+                src="./images/slider2.2.jpg"
+                alt="велотрасса по шоссе"
+              />
               <img
                 class="slider__route-img"
-                src="./images/Vector 1 (1).svg"
+                src="./images/Hill-trek.svg"
                 alt=""
               />
             </div>
@@ -100,11 +147,19 @@
               и аэродинамичный.
             </p>
             <div class="slider__images">
-              <img class="slider__image" src="./images/slider3.1.jpg" alt="" />
-              <img class="slider__image" src="./images/slider3.2.jpg" alt="" />
+              <img
+                class="slider__image"
+                src="./images/slider3.1.jpg"
+                alt="велотрасса по шоссе"
+              />
+              <img
+                class="slider__image"
+                src="./images/slider3.2.jpg"
+                alt="велотрасса в горах"
+              />
               <img
                 class="slider__route-img"
-                src="./images/Vector 2.svg"
+                src="./images/route-trek.svg"
                 alt=""
               />
             </div>
@@ -115,8 +170,9 @@
           <button class="slider__button slider__button_type_next"></button>
         </div>
       </section>
-      <section class="velobikes">
-        <h2 class="section-title">Велосипеды</h2>
+      <section class="velobikes" id="velobikes">
+        <div class="border-top-767px"></div>
+        <h2 class="section-title velobikes__title">Велосипеды</h2>
 
         <div class="velobikes__dropdown">
           <button type="button" class="velobikes__dropdown-btn">Шоссе</button>
@@ -130,36 +186,66 @@
             <li class="velobikes__dropdown-item" data-value="gravel">Грэвел</li>
             <li class="velobikes__dropdown-item" data-value="tt">TT</li>
           </ul>
+          <input
+            type="text"
+            name="select-category"
+            value=""
+            class="velobikes__dropdown-hidden-input"
+          />
         </div>
 
         <ul class="velobikes__cards-container">
-          <li class="velobikes__card">
-            <img
-              class="velobikes__card-image"
-              src="./images/Снимок экрана 2021-05-24 в 12.59.jpg"
-              alt=""
-            />
-            <p class="velobikes__model-name">Cervelo Caledonia-5</p>
+          <li class="velobikes__card velobikes__card_active">
+            <a
+              href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN"
+              class="velobikes__card-link"
+              target="_blank"
+            >
+              <img
+                class="velobikes__card-image"
+                src="./images/шоссе-1.jpg"
+                alt="Фотография модели велосипеда"
+              />
+              <p class="velobikes__model-name">Cervelo Caledonia-5</p>
+            </a>
           </li>
           <li class="velobikes__card">
-            <img
-              class="velobikes__card-image"
-              src="./images/Снимок экрана 2021-05-24 в 12.58 (2).jpg"
-              alt=""
-            />
-            <p class="velobikes__model-name">Cannondale Systemsix Himod</p>
+            <a
+              href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+              class="velobikes__card-link"
+              target="_blank"
+            >
+              <img
+                class="velobikes__card-image"
+                src="./images/шоссе-2.jpg"
+                alt="Фотография модели велосипеда"
+              />
+              <p class="velobikes__model-name">Cannondale Systemsix Himod</p>
+            </a>
           </li>
           <li class="velobikes__card">
-            <img
-              class="velobikes__card-image"
-              src="./images/Снимок экрана 2021-05-24 в 12.58 (3).jpg"
-              alt=""
-            />
-            <p class="velobikes__model-name">Trek Domane SL-7</p>
+            <a
+              href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+              class="velobikes__card-link"
+              target="_blank"
+            >
+              <img
+                class="velobikes__card-image"
+                src="./images/шоссе-3.jpg"
+                alt="Фотография модели велосипеда"
+              />
+              <p class="velobikes__model-name">Trek Domane SL-7</p>
+            </a>
           </li>
         </ul>
+        <ul class="velobikes__dots">
+          <li class="velobikes__dot velobikes__dot_active"></li>
+          <li class="velobikes__dot"></li>
+          <li class="velobikes__dot"></li>
+        </ul>
       </section>
-      <section class="workout">
+      <section class="workout" id="workout">
+        <div class="border-top-767px"></div>
         <h2 class="section-title workout__title">Тренировки</h2>
         <p class="section-text workout__text">
           Чтобы найти маршрут для тренировки можно воспользоваться сервисом
@@ -167,8 +253,12 @@
           это приложение позволит построить тренировочный план.
         </p>
         <div class="workout__links">
-          <a class="workout__link" href="">Strava</a>
-          <a class="workout__link" href="">Komoot</a>
+          <a class="workout__link" href="https://www.strava.com" target="_blank"
+            >Strava</a
+          >
+          <a class="workout__link" href="https://www.komoot.com" target="_blank"
+            >Komoot</a
+          >
         </div>
         <img class="workout__image" src="./images/Placeholder4.jpg" alt="" />
       </section>
@@ -192,20 +282,40 @@
         <p class="footer__copyrigth">© Road Club 2021</p>
       </div>
 
-      <div class="footer__switch-box">
+      <div class="switch-box switch-box_place_footer">
         <img
-          class="footer__checkbox-icon"
+          class="switch-box__checkbox-icon switch-box__checkbox-icon_place_footer"
           src="./images/Vector-light.svg"
-          alt=""
+          alt="День"
         />
-        <label class="footer__checkbox">
-          <input class="footer__checkbox-input" type="checkbox" />
-          <div class="footer__pseudo-checkbox"></div>
+        <label class="switch-box__checkbox">
+          <input
+            class="switch-box__checkbox-input switch-box__checkbox-input_place_footer"
+            type="checkbox"
+          />
+          <span
+            class="switch-box__pseudo-checkbox switch-box__pseudo-checkbox_place_footer"
+          >
+            <svg
+              class="switch-box__icon"
+              width="38"
+              height="38"
+              viewBox="0 0 38 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.7652 5.50782C18.1889 4.36081 19.8111 4.36081 20.2348 5.50782C20.9082 7.33092 23.182 7.9402 24.6767 6.69803C25.6171 5.91652 27.0221 6.72767 26.8155 7.93283C26.4871 9.84836 28.1516 11.5129 30.0672 11.1845C31.2723 10.9779 32.0835 12.3829 31.302 13.3233C30.0598 14.818 30.6691 17.0918 32.4922 17.7652C33.6392 18.1889 33.6392 19.8111 32.4922 20.2348C30.6691 20.9082 30.0598 23.182 31.302 24.6767C32.0835 25.6171 31.2723 27.0221 30.0672 26.8155C28.1516 26.4871 26.4871 28.1516 26.8155 30.0672C27.0221 31.2723 25.6171 32.0835 24.6767 31.302C23.182 30.0598 20.9082 30.6691 20.2348 32.4922C19.8111 33.6392 18.1889 33.6392 17.7652 32.4922C17.0918 30.6691 14.818 30.0598 13.3233 31.302C12.3829 32.0835 10.9779 31.2723 11.1845 30.0672C11.5129 28.1516 9.84836 26.4871 7.93283 26.8155C6.72767 27.0221 5.91652 25.6171 6.69803 24.6767C7.9402 23.182 7.33092 20.9082 5.50782 20.2348C4.36081 19.8111 4.36081 18.1889 5.50782 17.7652C7.33092 17.0918 7.9402 14.818 6.69803 13.3233C5.91652 12.3829 6.72767 10.9779 7.93283 11.1845C9.84836 11.5129 11.5129 9.84836 11.1845 7.93283C10.9779 6.72767 12.3829 5.91652 13.3233 6.69803C14.818 7.9402 17.0918 7.33092 17.7652 5.50782Z"
+                stroke="#151515"
+                stroke-width="1.5"
+              />
+            </svg>
+          </span>
         </label>
         <img
-          class="footer__checkbox-icon"
+          class="switch-box__checkbox-icon switch-box__checkbox-icon_place_footer"
           src="./images/Vector-dark.svg"
-          alt=""
+          alt="Ночь"
         />
       </div>
     </footer>
@@ -213,5 +323,7 @@
     <script src="./modules/scripts/light-dark-theme.js"></script>
     <script src="./modules/scripts/email-input.js"></script>
     <script src="./modules/scripts/small-dropdown-menu.js"></script>
+    <script src="./modules/scripts/burger-menu.js"></script>
+    <script src="./modules/scripts/small-slider-script.js"></script>
   </body>
 </html>

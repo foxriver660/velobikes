@@ -1,4 +1,4 @@
-const changeThemeBtn = document.querySelector(".footer__pseudo-checkbox")
+const changeThemeBtns = document.querySelectorAll(".switch-box__pseudo-checkbox")
 const page = document.querySelector(".page")
 const titles = document.querySelectorAll(".section-title")
 const texts = document.querySelectorAll(".section-text")
@@ -12,7 +12,12 @@ const velobikesBtns = document.querySelectorAll(".velobikes__button")
 const workoutLinks = document.querySelectorAll(".workout__link")
 const footerHeading = document.querySelector(".footer__heading")
 const inputFooter = document.querySelector(".footer__email-input")
+const footer = document.querySelector(".footer")
 
+
+
+const changeThemeMatchBtn = document.querySelector(".switch-box__icon")
+const inputSwitchFooter = document.querySelector(".switch-box__checkbox-input")
 
 function changeTheme(){
   
@@ -25,12 +30,18 @@ function changeTheme(){
   sliderPrevBtn.classList.toggle("slider__button_type_prev-dark")
   footerHeading.classList.toggle("footer__heading_theme_dark")
   inputFooter.classList.toggle("footer__email-input_theme_dark")
+  footer.classList.toggle("footer_theme_dark")
   titles.forEach((title) => title.classList.toggle("section-title_theme_dark"))
   texts.forEach((text) => text.classList.toggle("section-text_theme_dark"))
   links.forEach((link) => link.classList.toggle("header__menu-link_theme_dark"))
   sliderBtns.forEach((sliderBtn) => sliderBtn.classList.toggle("slider__button_theme_dark"))
   velobikesBtns.forEach((velobikesBtn) => velobikesBtn.classList.toggle("velobikes__button_theme_dark"))
-  workoutLinks.forEach((workoutLink) =>  workoutLink.classList.toggle("velobikes__button_theme_dark"))
+  workoutLinks.forEach((workoutLink) =>  workoutLink.classList.toggle("workout__link_theme_dark"))
+  velobikesNames.forEach((velobikesName) =>  velobikesName.classList.toggle("velobikes__model-name_theme_dark"))
+  dropDownListItems.forEach((dropDownListItem) =>  dropDownListItem.classList.toggle("velobikes__dropdown-item_theme_dark"))
+  burger.classList.toggle("header__burger-btn_theme_dark");
+  if(!inputSwitchFooter.checked) {changeThemeMatchBtn.style.fill = "#24b47e"}
+  if(inputSwitchFooter.checked) {changeThemeMatchBtn.style.fill = "inherit"}
   
 }
-changeThemeBtn.addEventListener("click", () => changeTheme())
+changeThemeBtns.forEach((changeThemeBtn) => changeThemeBtn.addEventListener("click", () => changeTheme()))
