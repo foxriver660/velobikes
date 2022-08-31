@@ -55,6 +55,9 @@
       position: relative;
       display: flex;
       cursor: $custom-cursor;
+      &_theme_dark {
+        color: $title-color-dark;
+      }
     }
     &_theme_dark {
       color: $text-color-dark;
@@ -62,12 +65,10 @@
   }
   &__dropdown-btn_active {
     font-weight: 600;
-    color: $title-color-main;
-    opacity: 1;
+     opacity: 1;
     display: block;
   }
-
-  &__dropdown-list {
+   &__dropdown-list {
     display: flex;
     list-style: none;
     padding: 0;
@@ -126,6 +127,9 @@
       line-height: 14px;
     }
   }
+  &__dropdown-item_theme_dark {
+    color: $title-color-dark;
+  }
   &__dropdown-item:hover {
     opacity: 0.5;
   }
@@ -183,7 +187,7 @@
     @media screen and (max-width: 767px) {
       width: 100%;
       min-width: 284px;
-      box-shadow: none
+      box-shadow: none;
     }
     @media screen and (max-width: 450px) {
       max-width: 284px;

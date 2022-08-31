@@ -78,6 +78,16 @@ function changeVelobikes(activeIdx) {
     velobikesLinks[i].href = velobikesArr[activeIdx][i].urlLink;
   }
 }
+function moveSlide() {
+  sliderContainer.style.transform = `translateX(-${activeIdx * 130}%)`;
+}
+function activateListItem() {
+  velibikesItems[activeIdx].classList.add("velobikes__dropdown-item_active");
+}
+function changeButtonText() {
+  dropDownBtn.textContent = velibikesItems[activeIdx].innerText;
+}
+
 const changeSlide = (direction) => {
   switch (direction) {
     case "right": {
@@ -85,11 +95,11 @@ const changeSlide = (direction) => {
       if (activeIdx >= sliderItems.length) {
         activeIdx = 0;
       }
-      sliderContainer.style.transform = `translateX(-${activeIdx * 130}%)`;
-      clearBtn();
-      velibikesItems[activeIdx].classList.add("velobikes__dropdown-item_active");
-      changeVelobikes(activeIdx);
-      dropDownBtn.textContent = velibikesItems[activeIdx].innerText;
+      moveSlide()
+      clearBtn()
+      activateListItem()
+      changeVelobikes(activeIdx)
+      changeButtonText()
       break;
     }
     case "left": {
@@ -97,11 +107,11 @@ const changeSlide = (direction) => {
       if (activeIdx < 0) {
         activeIdx = sliderItems.length - 1;
       }
-      sliderContainer.style.transform = `translateX(-${activeIdx * 130}%)`;
-      clearBtn();
-      velibikesItems[activeIdx].classList.add("velobikes__dropdown-item_active");
-      changeVelobikes(activeIdx);
-      dropDownBtn.textContent = velibikesItems[activeIdx].innerText;
+      moveSlide()
+      clearBtn()
+      activateListItem()
+      changeVelobikes(activeIdx)
+      changeButtonText()
       break;
     }
   }

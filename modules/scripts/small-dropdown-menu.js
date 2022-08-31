@@ -8,16 +8,22 @@ function activeListItem(index) {
   dropDownListItems[index].classList.add('velobikes__dropdown-item_active')
 }
 function chooseSlide(){
-  if(dropDownBtn.textContent == "Шоссе") {sliderContainer.style.transform = `translateX(-${0 * 130}%)`;
-  changeVelobikes(0);
-  activeListItem(0)
+  let i = 0;
+  if(dropDownBtn.textContent == "Шоссе") {
+    sliderContainer.style.transform = `translateX(-${i * 130}%)`;
+  changeVelobikes(i);
+  activeListItem(i)
   }
-  if(dropDownBtn.textContent == "Грэвел") {sliderContainer.style.transform = `translateX(-${1 * 130}%)`; 
-  changeVelobikes(1);
-  activeListItem(1)}
-  if(dropDownBtn.textContent == "TT") {sliderContainer.style.transform = `translateX(-${2 * 130}%)`; 
-  changeVelobikes(2);
-  activeListItem(2)}
+  if(dropDownBtn.textContent == "Грэвел") {
+    i++
+    sliderContainer.style.transform = `translateX(-${i * 130}%)`; 
+  changeVelobikes(i);
+  activeListItem(i)}
+  if(dropDownBtn.textContent == "TT") {
+    i+=2
+    sliderContainer.style.transform = `translateX(-${i * 130}%)`; 
+  changeVelobikes(i);
+  activeListItem(i)}
 }
 
 dropDownBtn.addEventListener('click', function (e) {
@@ -27,13 +33,14 @@ dropDownBtn.addEventListener('click', function (e) {
 
 dropDownListItems.forEach(function (item) {
   item.addEventListener('click', function (e) {
+    activeIdx++
     e.stopPropagation();
     dropDownBtn.innerText = item.innerText;
     dropDownBtn.focus();
     dropDownInput.value = item.dataset.value;
     dropDownList.classList.remove('velobikes__dropdown-list_visible');
     chooseSlide()
-    changeVelobikes();
+    changeVelobikes(activeIdx);
   });
 });
 

@@ -734,13 +734,15 @@
     display: flex;
     cursor: url("../../images/cursor-medium.png"), pointer;
   }
+  .velobikes__dropdown-btn_theme_dark {
+    color: #fff;
+  }
 }
 .velobikes__dropdown-btn_theme_dark {
   color: #E6E6E6;
 }
 .velobikes__dropdown-btn_active {
   font-weight: 600;
-  color: #151515;
   opacity: 1;
   display: block;
 }
@@ -807,6 +809,9 @@
     font-size: 11px;
     line-height: 14px;
   }
+}
+.velobikes__dropdown-item_theme_dark {
+  color: #fff;
 }
 .velobikes__dropdown-item:hover {
   opacity: 0.5;
@@ -1169,5 +1174,8 @@
     padding-bottom: 40px;
     width: 100%;
     grid-area: 1/1/1/1;
+  }
+  .border-top-767px {
+    padding: 0;
   }
 }
