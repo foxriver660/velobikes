@@ -40,8 +40,9 @@ dropDownBtn.addEventListener("click", function (e) {
 });
 
 dropDownListItems.forEach(function (item) {
+  
   item.addEventListener("click", function (e) {
-    activeIdx++;
+    activeIdx++
     e.stopPropagation();
     dropDownBtn.innerText = item.innerText;
     dropDownBtn.focus();

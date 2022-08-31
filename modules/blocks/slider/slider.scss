@@ -78,7 +78,7 @@
     left: 0;
     bottom: 16px;
     padding: 12px 32px 12px 16px;
-    background-image: url(../../../images/Rectangle1.svg);
+    background-image: url(../images/Rectangle1.svg);
     width: 50px;
     height: 16px;
   }
@@ -117,17 +117,17 @@
       background-color: #434343;
     }
     &_type_prev {
-      background-image: url(../../../images/prev.svg);
+      background-image: url(../images/prev.svg);
     }
     &_type_prev-dark {
-      background-image: url(../../../images/prev_dark.svg);
+      background-image: url(../images/prev_dark.svg);
     }
 
     &_type_next {
-      background-image: url(../../../images/next.svg);
+      background-image: url(../images/next.svg);
     }
     &_type_next-dark {
-      background-image: url(../../../images/next_dark.svg);
+      background-image: url(../images/next_dark.svg);
     }
   }
 }
