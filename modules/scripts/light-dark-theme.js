@@ -16,12 +16,14 @@ const footer = document.querySelector(".footer")
 
 
 
+
 const changeThemeMatchBtn = document.querySelector(".switch-box__icon")
-const inputSwitchFooter = document.querySelector(".switch-box__checkbox-input")
+const inputFooterSwitchs = document.querySelectorAll(".switch-box__checkbox-input")
+
 
 function changeTheme(){
   
-  page.classList.toggle("page_theme_dark")
+      page.classList.toggle("page_theme_dark")
   benefitsTextImage.classList.toggle("benefits__img-text_theme_dark")
   quote.classList.toggle("motivation__quote_theme_dark")
   quoteAuthor.classList.toggle("motivation__quote-author_theme_dark")
@@ -31,7 +33,8 @@ function changeTheme(){
   footerHeading.classList.toggle("footer__heading_theme_dark")
   inputFooter.classList.toggle("footer__email-input_theme_dark")
   footer.classList.toggle("footer_theme_dark")
-  titles.forEach((title) => title.classList.toggle("section-title_theme_dark"))
+    dropDownBtn.classList.toggle("velobikes__dropdown-btn_theme_dark")
+    titles.forEach((title) => title.classList.toggle("section-title_theme_dark"))
   texts.forEach((text) => text.classList.toggle("section-text_theme_dark"))
   links.forEach((link) => link.classList.toggle("header__menu-link_theme_dark"))
   sliderBtns.forEach((sliderBtn) => sliderBtn.classList.toggle("slider__button_theme_dark"))
@@ -40,8 +43,6 @@ function changeTheme(){
   velobikesNames.forEach((velobikesName) =>  velobikesName.classList.toggle("velobikes__model-name_theme_dark"))
   dropDownListItems.forEach((dropDownListItem) =>  dropDownListItem.classList.toggle("velobikes__dropdown-item_theme_dark"))
   burger.classList.toggle("header__burger-btn_theme_dark");
-  if(!inputSwitchFooter.checked) {changeThemeMatchBtn.style.fill = "#24b47e"}
-  if(inputSwitchFooter.checked) {changeThemeMatchBtn.style.fill = "inherit"}
-  
-}
+  document.querySelector('.header__burger-btn_active').classList.toggle("header__burger-btn_theme_dark-active");
+  }
 changeThemeBtns.forEach((changeThemeBtn) => changeThemeBtn.addEventListener("click", () => changeTheme()))
