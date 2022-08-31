@@ -52,7 +52,7 @@
   background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%, #000 41%, #000 60%, transparent 61%, transparent 80%, #000 81%);
 }
 .header__burger-btn:hover {
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .header__burger-btn_theme_dark {
   background: linear-gradient(to bottom, #fff 20%, transparent 21%, transparent 40%, #fff 41%, #fff 60%, transparent 61%, transparent 80%, #fff 81%);
@@ -113,7 +113,7 @@
 .header__menu-link {
   text-decoration: none;
   color: #222222;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .header__menu-link_theme_dark {
   color: #fff;
@@ -176,7 +176,7 @@
   font: inherit;
   color: inherit;
   background-color: transparent;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
   background-color: #24B47E;
   border-radius: 4px;
   max-width: 180px;
@@ -454,7 +454,7 @@
   font-size: 18px;
   line-height: 28px;
   color: #151515;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .workout__link:hover {
   opacity: 0.75;
@@ -584,7 +584,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 28px;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
   color: #151515;
   opacity: 0;
   visibility: hidden;
@@ -610,7 +610,7 @@
   font-size: 13px;
   line-height: 28px;
   background-color: inherit;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
   color: #151515;
 }
 .footer__email-input_theme_dark {
@@ -736,12 +736,12 @@
     font-size: 11px;
     line-height: 14px;
     text-align: left;
-    background-image: url(../../../images/velo-btn.svg);
+    background-image: url(../images/velo-btn.svg);
     background-repeat: no-repeat;
     background-position: center right 12px;
     position: relative;
     display: flex;
-    cursor: url("../../images/cursor-medium.png"), pointer;
+    cursor: url("../images/cursor-medium.png"), pointer;
   }
   .velobikes__dropdown-btn_theme_dark {
     color: #fff;
@@ -785,7 +785,7 @@
   padding: 13px 20px;
   color: #222222;
   opacity: 0.7;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .velobikes__dropdown-item_theme_dark {
   color: #fff;
@@ -860,7 +860,7 @@
 }
 .velobikes__card-link {
   text-decoration: none;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .velobikes__card-image {
   width: 26.4vw;
@@ -884,7 +884,7 @@
   }
 }
 .velobikes__card-image:hover {
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .velobikes__model-name {
   margin: 0;
@@ -924,7 +924,7 @@
   height: 4px;
   background-color: #cacaca;
   border-radius: 50%;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 .velobikes__dot_active {
   background-color: #151515;
@@ -1026,7 +1026,7 @@
   left: 0;
   bottom: 16px;
   padding: 12px 32px 12px 16px;
-  background-image: url(../../../images/Rectangle1.svg);
+  background-image: url(../images/Rectangle1.svg);
   width: 50px;
   height: 16px;
 }
@@ -1056,7 +1056,7 @@
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
 }
 @media screen and (max-width: 767px) {
   .slider__button {
@@ -1069,16 +1069,16 @@
   background-color: #434343;
 }
 .slider__button_type_prev {
-  background-image: url(../../../images/prev.svg);
+  background-image: url(../images/prev.svg);
 }
 .slider__button_type_prev-dark {
-  background-image: url(../../../images/prev_dark.svg);
+  background-image: url(../images/prev_dark.svg);
 }
 .slider__button_type_next {
-  background-image: url(../../../images/next.svg);
+  background-image: url(../images/next.svg);
 }
 .slider__button_type_next-dark {
-  background-image: url(../../../images/next_dark.svg);
+  background-image: url(../images/next_dark.svg);
 }
 
 .switch-box {
@@ -1133,7 +1133,7 @@
   transition: 0.5s ease-in;
   background-color: #fff;
   border-radius: 12px;
-  cursor: url("../../images/cursor-medium.png"), pointer;
+  cursor: url("../images/cursor-medium.png"), pointer;
   display: block;
 }
 @media screen and (max-width: 767px) {
@@ -1185,7 +1185,7 @@
     width: 100%;
     grid-area: 1/1/1/1;
   }
-  .border-top-767px {
+  .border-top-767px_place_motivation {
     padding: 0;
   }
 }
