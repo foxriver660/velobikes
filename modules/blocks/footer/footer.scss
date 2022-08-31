@@ -1,6 +1,6 @@
 .footer {
   box-sizing: border-box;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   max-width: 1440px;
   width: 100%;
   display: flex;
@@ -8,14 +8,13 @@
   padding: 80px 120px 60px 120px;
   position: relative;
   &_theme_dark {
-    background-color: #2F2F2F;
+    background-color: #2f2f2f;
   }
-  @media screen  and (max-width:1439px){
-    padding:  2.5vw 5vw 2vw 5vw;
+  @media screen and (max-width: $screen-tablet) {
+    padding: 2.5vw 5vw 2vw 5vw;
   }
-  @media screen  and (max-width:767px){
-    padding:  60px 18px 16px;
-    
+  @media screen and (max-width: $screen-mobile) {
+    padding: 60px 18px 16px;
   }
   &__container {
     display: flex;
@@ -33,7 +32,7 @@
     line-height: 32px;
     color: $text-color-main;
     max-width: 229px;
-    
+
     &_theme_dark {
       color: $title-color-dark;
     }
@@ -62,13 +61,15 @@
     color: $title-color-main;
     opacity: 0;
     visibility: hidden;
+    &_theme_dark {
+      color: $title-color-dark
+    }
     &_active {
-      opacity: .7;
-    visibility: visible;
-    transition: opacity 0.3s ease
+      opacity: 0.7;
+      visibility: visible;
+      transition: opacity 0.3s ease;
     }
   }
- 
 
   &__email-input {
     box-sizing: border-box;
@@ -103,7 +104,7 @@
     opacity: 1;
   }
   &__email-input:focus::placeholder {
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease;
   }
 
@@ -116,6 +117,4 @@
     line-height: 20px;
     color: #cfcfcf;
   }
-
-  
 }

@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $screen-tablet) {
     padding: 5vw 5vw 2vw 5vw;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $screen-mobile) {
     padding: 40px 18px 40px;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
     max-width: 650px;
     width: 50vw;
     max-height: 40vw;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       width: 100%;
       min-height: 204px;
     }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       gap: 40px;
       max-width: 650px;
     }
@@ -42,7 +42,7 @@
     line-height: 44px;
     letter-spacing: -0.5px;
     color: $text-color-main;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       font-size: 23px;
       line-height: 29px;
     }
@@ -60,7 +60,7 @@
     color: $text-color-main;
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       font-size: 14px;
       line-height: 22px;
     }
@@ -75,7 +75,7 @@
     line-height: 28px;
     color: $text-color-main;
     opacity: 0.7;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       font-size: 10px;
       line-height: 16px;
     }
