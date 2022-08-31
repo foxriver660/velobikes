@@ -265,6 +265,12 @@
   height: 29.9vw;
   max-height: 410px;
 }
+@media screen and (max-width: 1439px) {
+  .benefits__sticky-container {
+    width: 50%;
+    height: 54vw;
+  }
+}
 @media screen and (max-width: 767px) {
   .benefits__sticky-container {
     width: 96%;
@@ -518,7 +524,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   max-width: 1440px;
   width: 100%;
   display: flex;
@@ -527,7 +533,7 @@
   position: relative;
 }
 .footer_theme_dark {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
 }
 @media screen and (max-width: 1439px) {
   .footer {
@@ -582,6 +588,9 @@
   color: #151515;
   opacity: 0;
   visibility: hidden;
+}
+.footer__submit-btn_theme_dark {
+  color: #fff;
 }
 .footer__submit-btn_active {
   opacity: 0.7;
@@ -860,6 +869,7 @@
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #F4F4F4;
 }
 @media screen and (max-width: 767px) {
   .velobikes__card-image {
@@ -893,7 +903,7 @@
     text-align: center;
     font-size: 14px;
     line-height: 18px;
-    padding-top: 2px;
+    padding: 2px 0 0 0;
   }
 }
 .velobikes__dots {

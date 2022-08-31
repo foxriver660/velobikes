@@ -1,6 +1,6 @@
 .border-top-767px {
   display: none;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $screen-mobile) {
     display: block;
     height: 1px;
     border-top: 1px solid #E3E3E3;

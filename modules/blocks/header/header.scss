@@ -7,15 +7,15 @@
   box-sizing: border-box;
   max-width: 1440px;
   width: 100%;
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: $screen-tablet) {
     padding: 1vw 5vw 1vw 0;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $screen-mobile) {
     padding: 27px 18px 30px;
   }
   &__menu {
     position: relative;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -52,7 +52,7 @@
       #fff 81%
     );
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       display: block;
       align-self: flex-end;
     }
@@ -96,11 +96,11 @@
     padding: 0;
     margin: 0;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       display: none;
     }
     &_visible {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: $screen-mobile) {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -116,7 +116,7 @@
     font-size: 14px;
     line-height: 18px;
     padding-left: 34px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $screen-mobile) {
       text-align: center;
       font-size: 18px;
       padding: 0;
