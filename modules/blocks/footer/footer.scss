@@ -1,11 +1,10 @@
 .footer {
   box-sizing: border-box;
   background-color: #efefef;
-  max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 80px 120px 60px 120px;
+  padding: 82px 120px 60px 120px;
   position: relative;
   &_theme_dark {
     background-color: #2f2f2f;
@@ -14,7 +13,7 @@
     padding: 2.5vw 5vw 2vw 5vw;
   }
   @media screen and (max-width: $screen-mobile) {
-    padding: 60px 18px 16px;
+    padding: 80px 18px 16px;
   }
   &__container {
     display: flex;
@@ -22,6 +21,9 @@
     gap: 50px;
     max-width: 360px;
     width: 100%;
+    @media screen and (max-width: $screen-mobile) {
+      gap: 40px;
+    }
   }
 
   &__heading {
@@ -116,5 +118,11 @@
     font-size: 14px;
     line-height: 20px;
     color: #cfcfcf;
+    &_theme_dark {
+      color: #565656;;
+    }
+    @media screen and (max-width: $screen-mobile) {
+      padding-top: 57px;
+    }
   }
 }

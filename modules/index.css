@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .page {
+  max-width: 1440px;
+  width: 100%;
+  min-width: 320px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -20,8 +23,15 @@
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
-  max-width: 1440px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #F4F4F4;
+}
+.header_theme_dark {
+  background-color: #333333;
 }
 @media screen and (max-width: 1439px) {
   .header {
@@ -30,6 +40,9 @@
 }
 @media screen and (max-width: 767px) {
   .header {
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 27px 18px 30px;
   }
 }
@@ -87,7 +100,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding-top: 93px;
+    padding: 93px 0 100%;
   }
 }
 .header__menu-item {
@@ -104,9 +117,6 @@
     padding: 0;
   }
 }
-.header__menu-item:hover {
-  opacity: 0.75;
-}
 .header__menu-item:last-child {
   padding-left: 0;
 }
@@ -115,12 +125,16 @@
   color: #222222;
   cursor: url("../images/cursor-medium.png"), pointer;
 }
+.header__menu-link:hover {
+  opacity: 0.75;
+}
 .header__menu-link_theme_dark {
   color: #fff;
 }
 
 .content {
   max-width: 1440px;
+  min-width: 320px;
   width: 100%;
 }
 
@@ -139,17 +153,11 @@
     row-gap: 4vw;
   }
 }
-@media screen and (max-width: 1100px) {
-  .benefits {
-    padding: 1vw 0 0 5vw;
-    row-gap: 4vw;
-  }
-}
 @media screen and (max-width: 767px) {
   .benefits {
-    padding: 40px 18px;
+    padding: 114px 18px 38px;
     grid-template-columns: 1fr;
-    row-gap: 40px;
+    row-gap: 38px;
   }
 }
 .benefits__title {
@@ -167,6 +175,7 @@
 @media screen and (max-width: 767px) {
   .benefits__text {
     grid-area: 3/1/3/1;
+    padding-bottom: 3px;
   }
 }
 .benefits__button {
@@ -197,12 +206,10 @@
     grid-area: 4/1/4/1;
     max-width: 100%;
     padding: 14px 0;
+    font-size: 13px;
   }
 }
 .benefits__button:hover {
-  background-color: #319e75;
-}
-.benefits__button:active {
   background-size: 100% 100%;
   background-color: #24B47E;
   color: #fff;
@@ -258,7 +265,7 @@
 }
 .benefits__sticky-container {
   position: absolute;
-  top: 41.5%;
+  top: 45.5%;
   right: 0;
   width: 56.25%;
   max-width: 810px;
@@ -268,12 +275,13 @@
 @media screen and (max-width: 1439px) {
   .benefits__sticky-container {
     width: 50%;
-    height: 54vw;
+    height: 35vw;
   }
 }
 @media screen and (max-width: 767px) {
   .benefits__sticky-container {
-    width: 96%;
+    top: 41%;
+    width: 95%;
     height: 54vw;
   }
 }
@@ -293,8 +301,9 @@
 }
 @media screen and (max-width: 767px) {
   .benefits__sticky-image {
-    width: 50vw;
-    min-width: 234px;
+    width: 234px;
+    height: 160px;
+    padding: 16px 26px 12px 30px;
   }
 }
 
@@ -311,10 +320,10 @@
 }
 @media screen and (max-width: 767px) {
   .motivation {
-    padding: 40px 18px 40px;
+    padding: 38px 18px 40px;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
   }
 }
 .motivation__image {
@@ -326,6 +335,10 @@
   .motivation__image {
     width: 100%;
     min-height: 204px;
+    max-height: 60vw;
+    padding-bottom: 20px;
+    border-top: 1px solid #E3E3E3;
+    padding-top: 20px;
   }
 }
 .motivation__container {
@@ -368,11 +381,13 @@
   color: #222222;
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 @media screen and (max-width: 767px) {
   .motivation__quote-author {
     font-size: 14px;
     line-height: 22px;
+    gap: 2px;
   }
 }
 .motivation__quote-author_theme_dark {
@@ -385,9 +400,12 @@
   line-height: 28px;
   color: #222222;
   opacity: 0.7;
+  padding-bottom: 6px;
+  display: block;
 }
 @media screen and (max-width: 767px) {
   .motivation__author-job {
+    padding: 0;
     font-size: 10px;
     line-height: 16px;
   }
@@ -413,28 +431,32 @@
 @media screen and (max-width: 767px) {
   .workout {
     grid-template-columns: 1fr;
-    row-gap: 40px;
-    padding: 80px 18px;
+    row-gap: 38px;
+    padding: 40px 18px;
   }
 }
 .workout__title {
   grid-area: 1/1/1/1;
+  padding-top: 3px;
 }
 @media screen and (max-width: 767px) {
   .workout__title {
     padding-top: 40px;
+    border-top: 1px solid #E3E3E3;
   }
 }
 .workout__text {
   grid-area: 2/1/2/1;
+  padding-top: 10px;
 }
 @media screen and (max-width: 767px) {
   .workout__text {
     grid-area: 3/1/3/1;
+    padding-top: 3px;
   }
 }
 .workout__links {
-  padding-top: 9.15vw;
+  padding-top: 9vw;
   display: flex;
   gap: 30px;
   grid-area: 3/1/3/1;
@@ -443,7 +465,7 @@
 @media screen and (max-width: 767px) {
   .workout__links {
     grid-area: 4/1/4/1;
-    padding-top: 0;
+    padding-top: 2px;
   }
 }
 .workout__link {
@@ -525,11 +547,10 @@
 .footer {
   box-sizing: border-box;
   background-color: #efefef;
-  max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 80px 120px 60px 120px;
+  padding: 82px 120px 60px 120px;
   position: relative;
 }
 .footer_theme_dark {
@@ -542,7 +563,7 @@
 }
 @media screen and (max-width: 767px) {
   .footer {
-    padding: 60px 18px 16px;
+    padding: 80px 18px 16px;
   }
 }
 .footer__container {
@@ -551,6 +572,11 @@
   gap: 50px;
   max-width: 360px;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .footer__container {
+    gap: 40px;
+  }
 }
 .footer__heading {
   margin: 0;
@@ -676,6 +702,14 @@
   line-height: 20px;
   color: #cfcfcf;
 }
+.footer__copyrigth_theme_dark {
+  color: #565656;
+}
+@media screen and (max-width: 767px) {
+  .footer__copyrigth {
+    padding-top: 57px;
+  }
+}
 
 .velobikes {
   padding: 60px 120px;
@@ -698,7 +732,9 @@
 }
 @media screen and (max-width: 767px) {
   .velobikes__title {
-    grid-area: 2/1/2/1;
+    grid-area: 1/1/1/1;
+    border-top: 1px solid #E3E3E3;
+    padding-top: 40px;
   }
 }
 .velobikes__dropdown {
@@ -712,7 +748,7 @@
 }
 @media screen and (max-width: 767px) {
   .velobikes__dropdown {
-    grid-area: 3/1/3/1;
+    grid-area: 2/1/2/1;
     align-items: flex-start;
     flex-direction: column;
     margin: 0 0 0 0;
@@ -729,8 +765,7 @@
     background-color: inherit;
     border-radius: 2px;
     width: 114px;
-    max-height: 30px;
-    padding: 8px 0 8px 12px;
+    padding: 7px 0 7px 12px;
     border: 1px solid #e3e3e3;
     font-weight: 600;
     font-size: 11px;
@@ -745,6 +780,7 @@
   }
   .velobikes__dropdown-btn_theme_dark {
     color: #fff;
+    background-image: url(../images/velo-btn-white.svg);
   }
 }
 .velobikes__dropdown-btn_theme_dark {
@@ -758,10 +794,10 @@
 .velobikes__dropdown-list {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 12px 0 0 0;
   margin: 0;
   height: 30px;
-  gap: 40px;
+  gap: 45px;
 }
 @media screen and (max-width: 767px) {
   .velobikes__dropdown-list {
@@ -782,7 +818,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  padding: 13px 20px;
+  padding: 13px 0;
   color: #222222;
   opacity: 0.7;
   cursor: url("../images/cursor-medium.png"), pointer;
@@ -804,6 +840,8 @@
     background-position: center right 12px;
     box-sizing: border-box;
     border-radius: 2px;
+    background-color: #F4F4F4;
+    opacity: 1;
   }
 }
 .velobikes__dropdown-item_active {
@@ -821,9 +859,18 @@
 }
 .velobikes__dropdown-item_theme_dark {
   color: #fff;
+  background-color: #333333;
 }
 .velobikes__dropdown-item:hover {
-  opacity: 0.5;
+  opacity: 0.75;
+}
+@media screen and (max-width: 767px) {
+  .velobikes__dropdown-item:hover {
+    opacity: 1;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 600;
+  }
 }
 .velobikes__dropdown-hidden-input {
   display: none;
@@ -839,7 +886,7 @@
 }
 @media screen and (max-width: 767px) {
   .velobikes__cards-container {
-    grid-area: 4/1/4/1;
+    grid-area: 3/1/3/1;
     gap: 40%;
   }
 }
@@ -876,6 +923,7 @@
     width: 100%;
     min-width: 284px;
     box-shadow: none;
+    padding: 18px 16px 0;
   }
 }
 @media screen and (max-width: 450px) {
@@ -888,12 +936,13 @@
 }
 .velobikes__model-name {
   margin: 0;
-  padding-top: 22px;
+  padding: 13px 0 0 5px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #151515;
+  max-width: 380px;
 }
 .velobikes__model-name_theme_dark {
   color: #fff;
@@ -902,8 +951,8 @@
   .velobikes__model-name {
     text-align: center;
     font-size: 14px;
-    line-height: 18px;
-    padding: 2px 0 0 0;
+    line-height: 17px;
+    padding: 0 0 0 0;
   }
 }
 .velobikes__dots {
@@ -917,6 +966,7 @@
     display: flex;
     gap: 5px;
     justify-content: center;
+    grid-area: 4/1/4/1;
   }
 }
 .velobikes__dot {
@@ -931,7 +981,7 @@
 }
 
 .slider {
-  padding: 60px 0 77px 120px;
+  padding: 60px 0 64px 120px;
   position: relative;
   overflow: hidden;
   min-height: 922px;
@@ -968,6 +1018,8 @@
 }
 .slider__title {
   order: 1;
+  border-top: 1px solid #E3E3E3;
+  padding-top: 40px;
 }
 .slider__text {
   order: 2;
@@ -1030,18 +1082,28 @@
   width: 50px;
   height: 16px;
 }
+@media screen and (max-width: 767px) {
+  .slider__route-img {
+    background-size: 66px 50px;
+    background-repeat: no-repeat;
+    bottom: 10px;
+    width: 37px;
+    padding: 16px 26px 9px 12px;
+  }
+}
 .slider__buttons {
   padding-top: 50px;
   display: flex;
-  gap: 43px;
+  gap: 24px;
 }
 @media screen and (max-width: 767px) {
   .slider__buttons {
     position: absolute;
-    top: 90px;
+    top: 89px;
     right: 20px;
     padding-top: 0;
-    gap: 10px;
+    gap: 12px;
+    translate: 2px;
   }
 }
 .slider__button:hover {
@@ -1086,11 +1148,15 @@
   gap: 22px;
   align-self: flex-end;
 }
+.switch-box_place_footer {
+  padding-bottom: 6px;
+  translate: -2px;
+}
 @media screen and (max-width: 767px) {
   .switch-box_place_footer {
     position: absolute;
-    bottom: 5%;
-    right: 4%;
+    bottom: 2%;
+    right: 3.8%;
   }
 }
 .switch-box_place_header {
@@ -1100,7 +1166,7 @@
   .switch-box_place_header {
     display: flex;
     justify-content: center;
-    padding-top: 314px;
+    padding-top: 280px;
   }
 }
 .switch-box__icon {
@@ -1171,21 +1237,4 @@
 }
 .switch-box__checkbox-icon:last-of-type {
   width: 19px;
-}
-
-.border-top-767px {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .border-top-767px {
-    display: block;
-    height: 1px;
-    border-top: 1px solid #E3E3E3;
-    padding-bottom: 40px;
-    width: 100%;
-    grid-area: 1/1/1/1;
-  }
-  .border-top-767px_place_motivation {
-    padding: 0;
-  }
 }

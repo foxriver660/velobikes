@@ -1,12 +1,15 @@
 .switch-box {
-  display: flex;
+  
+   display: flex;
   gap: 22px;
   align-self: flex-end;
   &_place_footer {
+    padding-bottom: 6px;
+    translate: -2px;
     @media screen and (max-width: $screen-mobile) {
       position: absolute;
-      bottom: 5%;
-      right: 4%;
+      bottom: 2%;
+      right: 3.8%;
       
     }
   }
@@ -15,7 +18,7 @@
     @media screen and (max-width: $screen-mobile) {
       display: flex;
       justify-content: center;
-      padding-top: 314px;
+      padding-top: 280px;
     } }
   &__icon {
     display: none;

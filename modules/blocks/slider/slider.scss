@@ -1,5 +1,5 @@
 .slider {
-    padding: 60px 0 77px 120px;
+  padding: 60px 0 64px 120px;
   position: relative;
   overflow: hidden;
   min-height: 922px;
@@ -19,18 +19,19 @@
     transition: 1s ease-in-out;
   }
   &__item {
-        display: flex;
+    display: flex;
     width: 100%;
     flex-direction: column;
     gap: 50px;
-    
+
     @media screen and (max-width: $screen-mobile) {
       gap: 40px;
     }
   }
   &__title {
     order: 1;
-    
+    border-top: 1px solid #E3E3E3;
+    padding-top: 40px;
   }
   &__text {
     order: 2;
@@ -42,7 +43,7 @@
 
   &__images {
     order: 3;
-        display: flex;
+    display: flex;
     gap: 40px;
     padding-top: 30px;
     position: relative;
@@ -57,17 +58,17 @@
     max-width: 650px;
     width: 100%;
     @media screen and (max-width: $screen-tablet) {
-      width: 50%
+      width: 50%;
     }
     @media screen and (max-width: $screen-mobile) {
-      width: 100%
+      width: 100%;
     }
   }
   &__image:nth-of-type(2n) {
     max-width: 630px;
     width: 100%;
     @media screen and (max-width: $screen-tablet) {
-      width: 50%
+      width: 50%;
     }
     @media screen and (max-width: $screen-mobile) {
       display: none;
@@ -81,22 +82,28 @@
     background-image: url(../images/Rectangle1.svg);
     width: 50px;
     height: 16px;
-  }
+    @media screen and (max-width: $screen-mobile) {
+     background-size: 66px 50px;
+     background-repeat: no-repeat;
+     bottom: 10px;
+     width: 37px;
+     padding: 16px 26px 9px 12px;
+  }}
   &__buttons {
     padding-top: 50px;
     display: flex;
-    gap: 43px;
+    gap: 24px;
     @media screen and (max-width: $screen-mobile) {
       position: absolute;
-      top: 90px;
+      top: 89px;
       right: 20px;
       padding-top: 0;
-      gap: 10px;
+      gap: 12px;
+      translate: 2px;
     }
   }
   &__button:hover {
-    
-    opacity: .6;
+    opacity: 0.6;
   }
   &__button {
     padding: 0;
@@ -110,8 +117,8 @@
     cursor: $custom-cursor;
     @media screen and (max-width: $screen-mobile) {
       width: 24px;
-    height: 24px;
-    background-size: 5px 10px;
+      height: 24px;
+      background-size: 5px 10px;
     }
     &_theme_dark {
       background-color: #434343;

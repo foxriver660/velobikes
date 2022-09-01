@@ -5,12 +5,21 @@
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
-  max-width: 1440px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $main-theme;
+  &_theme_dark {
+    background-color: $dark-theme;
+  }
   @media screen and (max-width: $screen-tablet) {
     padding: 1vw 5vw 1vw 0;
   }
   @media screen and (max-width: $screen-mobile) {
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 27px 18px 30px;
   }
   &__menu {
@@ -105,7 +114,8 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        padding-top: 93px;
+        padding: 93px 0 100%;
+        
       }
     }
   }
@@ -122,9 +132,7 @@
       padding: 0;
     }
   }
-  &__menu-item:hover {
-    opacity: .75;
-  }
+ 
   &__menu-item:last-child {
     padding-left: 0;
   }
@@ -132,6 +140,9 @@
     text-decoration: none;
     color: $text-color-main;
     cursor: $custom-cursor;
+    &:hover {
+      opacity: .75;
+    }
   }
   &__menu-link_theme_dark {
     color: $title-color-dark;
