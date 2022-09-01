@@ -47,19 +47,21 @@
       transparent 80%,
       #000 81%
     );
-    &:hover {cursor: $custom-cursor;}
+    &:hover {
+      cursor: $custom-cursor;
+    }
     &_theme_dark {
       background: linear-gradient(
-      to bottom,
-      #fff 20%,
-      transparent 21%,
-      transparent 40%,
-      #fff 41%,
-      #fff 60%,
-      transparent 61%,
-      transparent 80%,
-      #fff 81%
-    );
+        to bottom,
+        #fff 20%,
+        transparent 21%,
+        transparent 40%,
+        #fff 41%,
+        #fff 60%,
+        transparent 61%,
+        transparent 80%,
+        #fff 81%
+      );
     }
     @media screen and (max-width: $screen-mobile) {
       display: block;
@@ -67,36 +69,14 @@
     }
   }
   &__burger-btn_active {
-    background: linear-gradient(
-        45deg,
-        transparent 45%,
-        #000 46%,
-        #000 55%,
-        transparent 56%
-      ),
-      linear-gradient(
-        -45deg,
-        transparent 45%,
-        #000 46%,
-        #000 55%,
-        transparent 56%
-      );
+    background: url(../../../images/menu-close-btn.svg);
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &__burger-btn_theme_dark-active {
-    background: linear-gradient(
-        45deg,
-        transparent 45%,
-        #fff 46%,
-        #fff 55%,
-        transparent 56%
-      ),
-      linear-gradient(
-        -45deg,
-        transparent 45%,
-        #fff 46%,
-        #fff 55%,
-        transparent 56%
-      );
+    background: url(../../../images/menu-close-btn-white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &__menu-list {
     list-style: none;
@@ -115,7 +95,6 @@
         flex-direction: column;
         gap: 32px;
         padding: 93px 0 100%;
-        
       }
     }
   }
@@ -132,7 +111,7 @@
       padding: 0;
     }
   }
- 
+
   &__menu-item:last-child {
     padding-left: 0;
   }
@@ -141,7 +120,7 @@
     color: $text-color-main;
     cursor: $custom-cursor;
     &:hover {
-      opacity: .75;
+      opacity: 0.75;
     }
   }
   &__menu-link_theme_dark {

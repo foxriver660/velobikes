@@ -30,7 +30,7 @@
   }
   &__title {
     order: 1;
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
     padding-top: 40px;
   }
   &__text {
@@ -40,7 +40,6 @@
       order: 3;
     }
   }
-
   &__images {
     order: 3;
     display: flex;
@@ -83,12 +82,13 @@
     width: 50px;
     height: 16px;
     @media screen and (max-width: $screen-mobile) {
-     background-size: 66px 50px;
-     background-repeat: no-repeat;
-     bottom: 10px;
-     width: 37px;
-     padding: 16px 26px 9px 12px;
-  }}
+      background-size: 66px 50px;
+      background-repeat: no-repeat;
+      bottom: 10px;
+      width: 37px;
+      padding: 16px 26px 9px 12px;
+    }
+  }
   &__buttons {
     padding-top: 50px;
     display: flex;

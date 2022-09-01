@@ -15,7 +15,7 @@
   &__title {
     @media screen and(max-width:$screen-mobile) {
       grid-area: 1/1/1/1;
-      border-top: 1px solid #E3E3E3;
+      border-top: 1px solid #e3e3e3;
       padding-top: 40px;
     }
   }
@@ -44,7 +44,6 @@
       background-color: inherit;
       border-radius: 2px;
       width: 114px;
-      
       padding: 7px 0 7px 12px;
       border: 1px solid #e3e3e3;
       font-weight: 600;
@@ -59,7 +58,7 @@
       cursor: $custom-cursor;
       &_theme_dark {
         color: $title-color-dark;
-        background-image: url(../images/velo-btn-white.svg)
+        background-image: url(../images/velo-btn-white1.svg);
       }
     }
     &_theme_dark {
@@ -91,7 +90,6 @@
       }
     }
   }
-
   &__dropdown-item {
     margin: 0;
     padding: 0;
@@ -145,11 +143,9 @@
       font-weight: 600;
     }
   }
-
   &__dropdown-hidden-input {
     display: none;
   }
-
   &__cards-container {
     padding: 0;
     margin: 0;
@@ -164,7 +160,6 @@
       gap: 40%;
     }
   }
-
   &__card {
     &:hover {
       opacity: 0.7;
@@ -190,7 +185,7 @@
     }
   }
   &__card-image {
-       width: 26.4vw;
+    width: 26.4vw;
     max-width: 380px;
     box-shadow: -3px 0px 51px -7px rgba(34, 60, 80, 0.2);
     border-radius: 20px;
@@ -222,7 +217,6 @@
     &_theme_dark {
       color: $title-color-dark;
     }
-    
     @media screen and (max-width: $screen-mobile) {
       text-align: center;
       font-size: 14px;

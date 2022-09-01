@@ -21,27 +21,21 @@ const changeThemeMatchBtn = document.querySelector(".switch-box__icon");
 const inputFooterSwitchs = document.querySelectorAll(
   ".switch-box__checkbox-input"
 );
-const switchIcons = document.querySelectorAll(
-  ".switch-box__checkbox-icon"
-);
+const switchIcons = document.querySelectorAll(".switch-box__checkbox-icon");
 
-function changeIconColor(){
-  for (let k = 0; k < switchIcons.length; k++)
-{
-  if ((k % 2) === 0)
-  {
-  	switchIcons[k].src = "./images/Vector-light2.svg"
-  } else (switchIcons[k].src = "./images/Vector-dark2.svg")
+function changeIconColor() {
+  for (let k = 0; k < switchIcons.length; k++) {
+    if (k % 2 === 0) {
+      switchIcons[k].src = "./images/Vector-light2.svg";
+    } else switchIcons[k].src = "./images/Vector-dark2.svg";
+  }
 }
-}
-function changeReverseIconColor(){
-  for (let k = 0; k < switchIcons.length; k++)
-{
-  if ((k % 2) === 0)
-  {
-  	switchIcons[k].src = "./images/Vector-light.svg"
-  } else (switchIcons[k].src = "./images/Vector-dark.svg")
-}
+function changeReverseIconColor() {
+  for (let k = 0; k < switchIcons.length; k++) {
+    if (k % 2 === 0) {
+      switchIcons[k].src = "./images/Vector-light.svg";
+    } else switchIcons[k].src = "./images/Vector-dark.svg";
+  }
 }
 
 function changeThemeDirect() {
@@ -80,19 +74,19 @@ function changeThemeDirect() {
     dropDownListItem.classList.toggle("velobikes__dropdown-item_theme_dark")
   );
   burger.classList.toggle("header__burger-btn_theme_dark");
+  burger.classList.toggle("header__burger-btn_theme_dark-active");
   // document
   //   .querySelector(".header__burger-btn_active").classList.toggle("header__burger-btn_theme_dark-active");
 }
 
-
 function changeTheme() {
-    if(!page.classList.contains("page_theme_dark")){
+  if (!page.classList.contains("page_theme_dark")) {
     changeIconColor();
     changeThemeDirect();
-  } else {changeReverseIconColor(); changeThemeDirect();}
-
-
-
+  } else {
+    changeReverseIconColor();
+    changeThemeDirect();
+  }
 }
 changeThemeBtns.forEach((changeThemeBtn) =>
   changeThemeBtn.addEventListener("click", () => changeTheme())

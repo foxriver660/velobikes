@@ -77,10 +77,14 @@
   }
 }
 .header__burger-btn_active {
-  background: linear-gradient(45deg, transparent 45%, #000 46%, #000 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, #000 46%, #000 55%, transparent 56%);
+  background: url(../../../images/menu-close-btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header__burger-btn_theme_dark-active {
-  background: linear-gradient(45deg, transparent 45%, #fff 46%, #fff 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, #fff 46%, #fff 55%, transparent 56%);
+  background: url(../../../images/menu-close-btn-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header__menu-list {
   list-style: none;
@@ -133,8 +137,6 @@
 }
 
 .content {
-  max-width: 1440px;
-  min-width: 320px;
   width: 100%;
 }
 
@@ -337,7 +339,7 @@
     min-height: 204px;
     max-height: 60vw;
     padding-bottom: 20px;
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
     padding-top: 20px;
   }
 }
@@ -442,7 +444,7 @@
 @media screen and (max-width: 767px) {
   .workout__title {
     padding-top: 40px;
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
   }
 }
 .workout__text {
@@ -733,7 +735,7 @@
 @media screen and (max-width: 767px) {
   .velobikes__title {
     grid-area: 1/1/1/1;
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
     padding-top: 40px;
   }
 }
@@ -780,7 +782,7 @@
   }
   .velobikes__dropdown-btn_theme_dark {
     color: #fff;
-    background-image: url(../images/velo-btn-white.svg);
+    background-image: url(../images/velo-btn-white1.svg);
   }
 }
 .velobikes__dropdown-btn_theme_dark {
@@ -1018,7 +1020,7 @@
 }
 .slider__title {
   order: 1;
-  border-top: 1px solid #E3E3E3;
+  border-top: 1px solid #e3e3e3;
   padding-top: 40px;
 }
 .slider__text {

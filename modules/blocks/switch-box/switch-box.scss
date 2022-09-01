@@ -1,6 +1,5 @@
 .switch-box {
-  
-   display: flex;
+  display: flex;
   gap: 22px;
   align-self: flex-end;
   &_place_footer {
@@ -10,7 +9,6 @@
       position: absolute;
       bottom: 2%;
       right: 3.8%;
-      
     }
   }
   &_place_header {
@@ -19,14 +17,14 @@
       display: flex;
       justify-content: center;
       padding-top: 280px;
-    } }
+    }
+  }
   &__icon {
     display: none;
     @media screen and (max-width: $screen-mobile) {
       display: block;
     }
   }
-
   &__checkbox {
     width: 44px;
     height: 24px;
@@ -38,12 +36,10 @@
   &__checkbox-input:checked ~ &__pseudo-checkbox {
     background-color: #545454;
   }
-
   &__checkbox-input:checked ~ &__pseudo-checkbox::before {
     transform: translateX(20px);
     transition: 0.2s ease-in;
   }
-
   &__pseudo-checkbox {
     position: relative;
     width: 44px;
@@ -80,7 +76,6 @@
       display: none;
     }
   }
-
   &__checkbox-icon {
     width: 28px;
     @media screen and (max-width: $screen-mobile) {

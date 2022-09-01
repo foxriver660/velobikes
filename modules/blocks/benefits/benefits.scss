@@ -11,7 +11,7 @@
     padding: 1vw 0 0 5vw;
     row-gap: 4vw;
   }
-    @media screen and (max-width: $screen-mobile) {
+  @media screen and (max-width: $screen-mobile) {
     padding: 114px 18px 38px;
     grid-template-columns: 1fr;
     row-gap: 38px;
@@ -58,7 +58,6 @@
       max-width: 100%;
       padding: 14px 0;
       font-size: 13px;
-      
     }
   }
   &__button:hover {
@@ -66,7 +65,7 @@
     background-color: $button-bgcolor;
     color: #fff;
   }
-  
+
   &__img-text {
     margin: 0;
     padding-top: 117px;
@@ -145,7 +144,7 @@
     box-shadow: -3px 0px 51px -7px rgba(34, 60, 80, 0.3);
     @media screen and (max-width: $screen-mobile) {
       width: 234px;
-    height: 160px;
+      height: 160px;
       padding: 16px 26px 12px 30px;
     }
   }
