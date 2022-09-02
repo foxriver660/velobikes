@@ -5,7 +5,7 @@
   grid-template-columns: minmax(350px, 460px) 1fr minmax(400px, 610px);
   grid-template-rows: repeat(3, auto) minmax(50px, 1fr);
   position: relative;
-  row-gap: 50px;
+  row-gap: 49px;
 
   @media screen and (max-width: $screen-tablet) {
     padding: 1vw 0 0 5vw;
@@ -68,7 +68,7 @@
 
   &__img-text {
     margin: 0;
-    padding-top: 117px;
+    padding-top: 119px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -110,6 +110,7 @@
       justify-self: end;
       min-width: 254px;
       max-width: 90%;
+      padding-top: 2px;
     }
   }
   &__sticky-container {
@@ -122,10 +123,10 @@
     max-height: 410px;
     @media screen and (max-width: $screen-tablet) {
       width: 50%;
-      height: 35vw;
+      height: 33vw;
     }
     @media screen and (max-width: $screen-mobile) {
-      top: 41%;
+      top: 47%;
       width: 95%;
       height: 54vw;
     }

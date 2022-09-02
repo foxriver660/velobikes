@@ -6,6 +6,11 @@
   padding: 0;
   margin: 0 auto;
   font-family: "Inter", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,12 +82,12 @@
   }
 }
 .header__burger-btn_active {
-  background: url(../../../images/menu-close-btn.svg);
+  background: url(../images/menu-close-btn.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .header__burger-btn_theme_dark-active {
-  background: url(../../../images/menu-close-btn-white.svg);
+  background: url(../images/menu-close-btn-white.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -147,7 +152,7 @@
   grid-template-columns: minmax(350px, 460px) 1fr minmax(400px, 610px);
   grid-template-rows: repeat(3, auto) minmax(50px, 1fr);
   position: relative;
-  row-gap: 50px;
+  row-gap: 49px;
 }
 @media screen and (max-width: 1439px) {
   .benefits {
@@ -218,7 +223,7 @@
 }
 .benefits__img-text {
   margin: 0;
-  padding-top: 117px;
+  padding-top: 119px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -263,6 +268,7 @@
     justify-self: end;
     min-width: 254px;
     max-width: 90%;
+    padding-top: 2px;
   }
 }
 .benefits__sticky-container {
@@ -277,12 +283,12 @@
 @media screen and (max-width: 1439px) {
   .benefits__sticky-container {
     width: 50%;
-    height: 35vw;
+    height: 33vw;
   }
 }
 @media screen and (max-width: 767px) {
   .benefits__sticky-container {
-    top: 41%;
+    top: 47%;
     width: 95%;
     height: 54vw;
   }
@@ -338,7 +344,7 @@
     width: 100%;
     min-height: 204px;
     max-height: 60vw;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     border-top: 1px solid #e3e3e3;
     padding-top: 20px;
   }
@@ -443,7 +449,7 @@
 }
 @media screen and (max-width: 767px) {
   .workout__title {
-    padding-top: 40px;
+    padding-top: 39px;
     border-top: 1px solid #e3e3e3;
   }
 }
@@ -714,7 +720,7 @@
 }
 
 .velobikes {
-  padding: 60px 120px;
+  padding: 59px 120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 120px;
@@ -796,7 +802,7 @@
 .velobikes__dropdown-list {
   display: flex;
   list-style: none;
-  padding: 12px 0 0 0;
+  padding: 14px 0 0 0;
   margin: 0;
   height: 30px;
   gap: 45px;
@@ -892,8 +898,18 @@
     gap: 40%;
   }
 }
-.velobikes__card:hover {
-  opacity: 0.7;
+.velobikes__card {
+  position: relative;
+}
+.velobikes__card:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.01);
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .velobikes__card {
@@ -1020,8 +1036,13 @@
 }
 .slider__title {
   order: 1;
-  border-top: 1px solid #e3e3e3;
-  padding-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .slider__title {
+    gap: 40px;
+    border-top: 1px solid #e3e3e3;
+    padding-top: 40px;
+  }
 }
 .slider__text {
   order: 2;

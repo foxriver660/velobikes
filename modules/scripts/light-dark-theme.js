@@ -30,7 +30,7 @@ function changeIconColor() {
     } else switchIcons[k].src = "./images/Vector-dark2.svg";
   }
 }
-function changeReverseIconColor() {
+function changeBackIconColor() {
   for (let k = 0; k < switchIcons.length; k++) {
     if (k % 2 === 0) {
       switchIcons[k].src = "./images/Vector-light.svg";
@@ -75,8 +75,6 @@ function changeThemeDirect() {
   );
   burger.classList.toggle("header__burger-btn_theme_dark");
   burger.classList.toggle("header__burger-btn_theme_dark-active");
-  // document
-  //   .querySelector(".header__burger-btn_active").classList.toggle("header__burger-btn_theme_dark-active");
 }
 
 function changeTheme() {
@@ -84,7 +82,7 @@ function changeTheme() {
     changeIconColor();
     changeThemeDirect();
   } else {
-    changeReverseIconColor();
+    changeBackIconColor();
     changeThemeDirect();
   }
 }

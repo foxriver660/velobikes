@@ -69,12 +69,12 @@
     }
   }
   &__burger-btn_active {
-    background: url(../../../images/menu-close-btn.svg);
+    background: url(../images/menu-close-btn.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
   &__burger-btn_theme_dark-active {
-    background: url(../../../images/menu-close-btn-white.svg);
+    background: url(../images/menu-close-btn-white.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -98,7 +98,6 @@
       }
     }
   }
-
   &__menu-item {
     font-style: normal;
     font-weight: 500;
@@ -111,7 +110,6 @@
       padding: 0;
     }
   }
-
   &__menu-item:last-child {
     padding-left: 0;
   }

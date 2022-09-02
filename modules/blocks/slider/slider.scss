@@ -30,8 +30,11 @@
   }
   &__title {
     order: 1;
-    border-top: 1px solid #e3e3e3;
-    padding-top: 40px;
+    @media screen and (max-width: $screen-mobile) {
+      gap: 40px;
+      border-top: 1px solid #e3e3e3;
+      padding-top: 40px;
+    }
   }
   &__text {
     order: 2;
