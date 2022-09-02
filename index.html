@@ -1,60 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Velobikes</title>
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./modules/index.css" />
   </head>
   <body class="page">
     <header class="header">
       <nav class="header__menu">
+        <button type="button" class="header__burger-btn"></button>
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Покрытия и градиенты</a>
+            <a class="header__menu-link" href="#coating"
+              >Покрытия и градиенты</a
+            >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Велосипеды</a>
+            <a class="header__menu-link" href="#velobikes">Велосипеды</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Тренировки</a>
+            <a class="header__menu-link" href="#workout">Тренировки</a>
+          </li>
+          <li class="header__menu-item">
+            <div class="switch-box switch-box_place_header">
+              <img
+                class="switch-box__checkbox-icon"
+                src="./images/Vector-light.svg"
+                alt="День"
+              />
+              <label class="switch-box__checkbox">
+                <input class="switch-box__checkbox-input" type="checkbox" />
+                <span class="switch-box__pseudo-checkbox"></span>
+              </label>
+              <img
+                class="switch-box__checkbox-icon"
+                src="./images/Vector-dark.svg"
+                alt="Ночь"
+              />
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <main class="content">
       <section class="benefits">
-        <h1 class="section-title benefits__title">Шоссе, ТТ и Грэвел</h1>
+        <h1 class="section-title benefits__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
         <p class="section-text benefits__text">
           Триатлонные старты, горные серпантины или грейвел заезды по живописным
           маршрутам – нужно только определиться с выбором велосипеда и
           отправиться в путь.
         </p>
-        <button class="benefits__button">Подробнее</button>
+        <button type="button" class="benefits__button">Подробнее</button>
         <p class="benefits__img-text">Cannondale Systemsix</p>
 
-        <img class="benefits__image" src="./images/Placeholder.jpg" alt="" />
+        <img
+          class="benefits__image"
+          src="./images/Placeholder.jpg"
+          alt="Лесистая трасса в горах"
+        />
         <div class="benefits__sticky-container">
           <img
             class="benefits__sticky-image"
-            src="./images/Снимок экрана 2021-05-24 в 12.58 (1).jpg"
-            alt=""
+            src="./images/sticky-bike.jpg"
+            alt="Трековый велосипед"
           />
         </div>
       </section>
       <section class="motivation">
-        <img src="./images/Placeholder1.jpg" alt="" class="motivation__image" />
+        <img
+          src="./images/Placeholder1.jpg"
+          alt="асфальтированная дорога в долине"
+          class="motivation__image"
+        />
         <blockquote class="motivation__container">
-          <p class="motivation__quote">
+          <h2 class="motivation__quote">
             «Катайся много или мало, долго или коротко, как хочешь - но катайся»
-          </p>
+          </h2>
           <p class="motivation__quote-author">
             Эдди Меркс<span class="motivation__author-job">Велогонщик</span>
           </p>
         </blockquote>
       </section>
-      <section class="slider">
+      <section class="slider" id="coating">
         <div class="slider__container">
           <div class="slider__item">
             <h2 class="section-title slider__title">Шоссе</h2>
@@ -64,11 +94,19 @@
               пелотоне, но тренироваться можно и самостоятельно.
             </p>
             <div class="slider__images">
-              <img class="slider__image" src="./images/slider1.1.jpg" alt="" />
-              <img class="slider__image" src="./images/slider1.2.jpg" alt="" />
+              <img
+                class="slider__image"
+                src="./images/slider1.1.jpg"
+                alt="велотрасса в горах"
+              />
+              <img
+                class="slider__image"
+                src="./images/slider1.2.jpg"
+                alt="велотрасса в холмах"
+              />
               <img
                 class="slider__route-img"
-                src="./images/Vector 1.svg"
+                src="./images/Mountain-trek.svg"
                 alt=""
               />
             </div>
@@ -82,11 +120,19 @@
               чтобы проехать по лёгкому бездорожью.
             </p>
             <div class="slider__images">
-              <img class="slider__image" src="./images/slider2.1.jpg" alt="" />
-              <img class="slider__image" src="./images/slider2.2.jpg" alt="" />
+              <img
+                class="slider__image"
+                src="./images/slider2.1.jpg"
+                alt="велотрасса в холмах"
+              />
+              <img
+                class="slider__image"
+                src="./images/slider2.2.jpg"
+                alt="велотрасса по шоссе"
+              />
               <img
                 class="slider__route-img"
-                src="./images/Vector 1 (1).svg"
+                src="./images/Hill-trek.svg"
                 alt=""
               />
             </div>
@@ -100,23 +146,37 @@
               и аэродинамичный.
             </p>
             <div class="slider__images">
-              <img class="slider__image" src="./images/slider3.1.jpg" alt="" />
-              <img class="slider__image" src="./images/slider3.2.jpg" alt="" />
+              <img
+                class="slider__image"
+                src="./images/slider3.1.jpg"
+                alt="велотрасса по шоссе"
+              />
+              <img
+                class="slider__image"
+                src="./images/slider3.2.jpg"
+                alt="велотрасса в горах"
+              />
               <img
                 class="slider__route-img"
-                src="./images/Vector 2.svg"
+                src="./images/route-trek.svg"
                 alt=""
               />
             </div>
           </div>
         </div>
         <div class="slider__buttons">
-          <button class="slider__button slider__button_type_prev"></button>
-          <button class="slider__button slider__button_type_next"></button>
+          <button
+            class="slider__button slider__button_type_prev"
+            type="button"
+          ></button>
+          <button
+            class="slider__button slider__button_type_next"
+            type="button"
+          ></button>
         </div>
       </section>
-      <section class="velobikes">
-        <h2 class="section-title">Велосипеды</h2>
+      <section class="velobikes" id="velobikes">
+        <h2 class="section-title velobikes__title">Велосипеды</h2>
 
         <div class="velobikes__dropdown">
           <button type="button" class="velobikes__dropdown-btn">Шоссе</button>
@@ -130,36 +190,65 @@
             <li class="velobikes__dropdown-item" data-value="gravel">Грэвел</li>
             <li class="velobikes__dropdown-item" data-value="tt">TT</li>
           </ul>
+          <input
+            type="text"
+            name="select-category"
+            value=""
+            class="velobikes__dropdown-hidden-input"
+          />
         </div>
 
         <ul class="velobikes__cards-container">
-          <li class="velobikes__card">
-            <img
-              class="velobikes__card-image"
-              src="./images/Снимок экрана 2021-05-24 в 12.59.jpg"
-              alt=""
-            />
-            <p class="velobikes__model-name">Cervelo Caledonia-5</p>
+          <li class="velobikes__card velobikes__card_active">
+            <a
+              href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN"
+              class="velobikes__card-link"
+              target="_blank"
+            >
+              <img
+                class="velobikes__card-image"
+                src="./images/шоссе-1.jpg"
+                alt="Фотография модели велосипеда"
+              />
+              <p class="velobikes__model-name">Cervelo Caledonia-5</p>
+            </a>
           </li>
           <li class="velobikes__card">
-            <img
-              class="velobikes__card-image"
-              src="./images/Снимок экрана 2021-05-24 в 12.58 (2).jpg"
-              alt=""
-            />
-            <p class="velobikes__model-name">Cannondale Systemsix Himod</p>
+            <a
+              href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+              class="velobikes__card-link"
+              target="_blank"
+            >
+              <img
+                class="velobikes__card-image"
+                src="./images/шоссе-2.jpg"
+                alt="Фотография модели велосипеда"
+              />
+              <p class="velobikes__model-name">Cannondale Systemsix Himod</p>
+            </a>
           </li>
           <li class="velobikes__card">
-            <img
-              class="velobikes__card-image"
-              src="./images/Снимок экрана 2021-05-24 в 12.58 (3).jpg"
-              alt=""
-            />
-            <p class="velobikes__model-name">Trek Domane SL-7</p>
+            <a
+              href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+              class="velobikes__card-link"
+              target="_blank"
+            >
+              <img
+                class="velobikes__card-image"
+                src="./images/шоссе-3.jpg"
+                alt="Фотография модели велосипеда"
+              />
+              <p class="velobikes__model-name">Trek Domane SL-7</p>
+            </a>
           </li>
         </ul>
+        <ul class="velobikes__dots">
+          <li class="velobikes__dot velobikes__dot_active"></li>
+          <li class="velobikes__dot"></li>
+          <li class="velobikes__dot"></li>
+        </ul>
       </section>
-      <section class="workout">
+      <section class="workout" id="workout">
         <h2 class="section-title workout__title">Тренировки</h2>
         <p class="section-text workout__text">
           Чтобы найти маршрут для тренировки можно воспользоваться сервисом
@@ -167,8 +256,12 @@
           это приложение позволит построить тренировочный план.
         </p>
         <div class="workout__links">
-          <a class="workout__link" href="">Strava</a>
-          <a class="workout__link" href="">Komoot</a>
+          <a class="workout__link" href="https://www.strava.com" target="_blank"
+            >Strava</a
+          >
+          <a class="workout__link" href="https://www.komoot.com" target="_blank"
+            >Komoot</a
+          >
         </div>
         <img class="workout__image" src="./images/Placeholder4.jpg" alt="" />
       </section>
@@ -177,7 +270,7 @@
       <div class="footer__container">
         <h3 class="footer__heading">Подпишитесь на рассылку —</h3>
 
-        <form class="footer__form">
+        <form class="footer__form" name="user-email">
           <fieldset class="footer__form-container">
             <input
               placeholder="Ваш e-mail"
@@ -186,26 +279,37 @@
               value=""
             />
           </fieldset>
-          <button class="footer__submit-btn">ok</button>
+          <button class="footer__submit-btn" type="submit">ok</button>
         </form>
 
         <p class="footer__copyrigth">© Road Club 2021</p>
       </div>
 
-      <div class="footer__switch-box">
+      <div class="switch-box switch-box_place_footer">
         <img
-          class="footer__checkbox-icon"
+          class="switch-box__checkbox-icon switch-box__checkbox-icon_place_footer"
           src="./images/Vector-light.svg"
-          alt=""
+          alt="День"
         />
-        <label class="footer__checkbox">
-          <input class="footer__checkbox-input" type="checkbox" />
-          <div class="footer__pseudo-checkbox"></div>
+        <label class="switch-box__checkbox">
+          <input
+            class="switch-box__checkbox-input switch-box__checkbox-input_place_footer"
+            type="checkbox"
+          />
+          <span
+            class="switch-box__pseudo-checkbox switch-box__pseudo-checkbox_place_footer"
+          >
+            <img
+              class="switch-box__icon"
+              src="./images/logo-footer-320px.svg"
+              alt="Иконка смены темы оформления"
+            />
+          </span>
         </label>
         <img
-          class="footer__checkbox-icon"
+          class="switch-box__checkbox-icon switch-box__checkbox-icon_place_footer"
           src="./images/Vector-dark.svg"
-          alt=""
+          alt="Ночь"
         />
       </div>
     </footer>
@@ -213,5 +317,7 @@
     <script src="./modules/scripts/light-dark-theme.js"></script>
     <script src="./modules/scripts/email-input.js"></script>
     <script src="./modules/scripts/small-dropdown-menu.js"></script>
+    <script src="./modules/scripts/burger-menu.js"></script>
+    <script src="./modules/scripts/small-slider-script.js"></script>
   </body>
 </html>

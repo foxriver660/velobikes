@@ -1,43 +1,127 @@
 .header {
   padding: 28px 120px 28px 0;
   margin: 0;
-max-width: $screen-dekstop;
-display: flex;
-justify-content: flex-end;
-outline: 1px solid green;
-box-sizing: border-box;
-max-width: 1440px;
-width: 100%;
-@media screen  and (max-width:1439px){
-  padding:  1vw 5vw 1vw 0;
-}
-@media screen  and (max-width:767px){
-  padding:  28px 18px 30px 0;
-}
-  &__menu {
-    
+  max-width: $screen-dekstop;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $main-theme;
+  &_theme_dark {
+    background-color: $dark-theme;
   }
-
+  @media screen and (max-width: $screen-tablet) {
+    padding: 1vw 5vw 1vw 0;
+  }
+  @media screen and (max-width: $screen-mobile) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 27px 18px 30px;
+  }
+  &__menu {
+    position: relative;
+    @media screen and (max-width: $screen-mobile) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__burger-btn {
+    width: 22px;
+    height: 19px;
+    display: none;
+    position: relative;
+    border: none;
+    background: linear-gradient(
+      to bottom,
+      #000 20%,
+      transparent 21%,
+      transparent 40%,
+      #000 41%,
+      #000 60%,
+      transparent 61%,
+      transparent 80%,
+      #000 81%
+    );
+    &:hover {
+      cursor: $custom-cursor;
+    }
+    &_theme_dark {
+      background: linear-gradient(
+        to bottom,
+        #fff 20%,
+        transparent 21%,
+        transparent 40%,
+        #fff 41%,
+        #fff 60%,
+        transparent 61%,
+        transparent 80%,
+        #fff 81%
+      );
+    }
+    @media screen and (max-width: $screen-mobile) {
+      display: block;
+      align-self: flex-end;
+    }
+  }
+  &__burger-btn_active {
+    background: url(../images/menu-close-btn.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__burger-btn_theme_dark-active {
+    background: url(../images/menu-close-btn-white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   &__menu-list {
     list-style: none;
     display: flex;
-    gap: 34px;
+    justify-content: space-between;
     padding: 0;
-  margin: 0;
-  }
+    margin: 0;
 
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+    &_visible {
+      @media screen and (max-width: $screen-mobile) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 93px 0 100%;
+      }
+    }
+  }
   &__menu-item {
-        font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 34px;
+    @media screen and (max-width: $screen-mobile) {
+      text-align: center;
+      font-size: 18px;
+      padding: 0;
+    }
+  }
+  &__menu-item:last-child {
+    padding-left: 0;
   }
   &__menu-link {
     text-decoration: none;
     color: $text-color-main;
     cursor: $custom-cursor;
-      }
+    &:hover {
+      opacity: 0.75;
+    }
+  }
   &__menu-link_theme_dark {
     color: $title-color-dark;
-          }
+  }
 }
