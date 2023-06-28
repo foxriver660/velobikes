@@ -1,4 +1,4 @@
-# Welcome to **<font color="#47E10C">[Velobikes](https://foxriver660.github.io/velobikes/)</font>**!
+# Welcome to <a href="https://foxriver660.github.io/velobikes/" style="color: green">Velobikes</a>!
 
   
 
