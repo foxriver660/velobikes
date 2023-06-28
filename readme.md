@@ -1,32 +1,16 @@
-# Проект: Velobikes
+# Welcome to **[Velobikes](https://foxriver660.github.io/velobikes/)**!
 
-## Обзор
+  
 
-- Описание
-- Исходные данные
-- Использованные технологии
-- Результат
+  
+Website. 
+* The file structure is built in accordance with the **BEM methodology** using the organization scheme of the file structure of the Nested project.
+* Used CSS Flexbox to create flexible layouts. With the help of this technology, the created website has an adaptive design.
+* **SASS(SCSS)** preprocessor used
+* **@media** queries used
+* Site interactivity on **vanilla js** (burger menu, two sliders, select dropdown list, day/night theme switching)
+# Used technologies
 
-**Описание**
+  
 
-О проекте Velobikes
-Интерактивный сайт о типах и моделях велосипедов.
-
-**Исходные данные**
-
-В качестве исходных данных был получен макет Фигме, в котором видно, как проект должен выглядеть на самых распространённых разрешениях экранов.
-
-- [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?node-id=0%3A1)
-
-**Использованные технологии**
-
-- использован препроцессор SASS(SCSS)
-- Flexbox
-- GRID Layout
-- Медиазапросы @media
-- Интерактивность сайта написана на vanila js (бургер меню, два слайдера, выпадающий список типа select, переключение темы день/ночь)
-- Оптимизация картинок через сервис [Tinypng](https://tinypng.com/), для ускорения загрузки сайта.
-
-**Результат**
-
-Веб-страница выложена на gh-pages по [ссылке](https://foxriver660.github.io/velobikes/)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)) 
